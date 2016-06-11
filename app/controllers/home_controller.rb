@@ -2,6 +2,9 @@ class HomeController < ApplicationController
   def index
   end
 
-  def show
+  def interview
+  end
+
+  def result
   end
 end
