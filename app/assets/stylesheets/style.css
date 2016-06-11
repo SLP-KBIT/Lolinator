@@ -1,0 +1,12 @@
+#question {  
+    position: absolute; 
+    font-size: 20px;
+    left: 20px;
+
+}
+
+#result {
+    text-align: center;
+    font-size: 29px;
+
+}
