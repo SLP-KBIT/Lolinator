@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Scale.ika_import File.read("#{Rails.root}/db/ika/scales.ika"), sync: true
+# Character.ika_import File.read("#{Rails.root}/db/ika/characters.ika"), sync: true
+# Feature.ika_import File.read("#{Rails.root}/db/ika/features.ika"), sync: true
