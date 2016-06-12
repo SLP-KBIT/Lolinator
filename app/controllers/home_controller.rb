@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def interview
+    @questions = Question.all
     # if current_user.nil?
     #   render :action => "new", :layout => "users/sessions"
     # end
@@ -23,6 +24,7 @@ class HomeController < ApplicationController
     #   "maternal" => 0
     # }
     question = params["question"]
-    @features = User.calc_scales(question)
+    parameters = User.calc_scales(question)
+    @features = Feature.calc_scales(parameters)
   end
 end

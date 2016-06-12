@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   def self.calc_scales(scales)
     questions = Question.all
     q = questions.first
-    param = {
+    params = {
       "innocence" => 0,
       "hegh_handed" => 0,
       "intellegence" => 0,
@@ -18,16 +18,17 @@ class User < ActiveRecord::Base
       "maternal" => 0,
       "tension" => 0
     }
-    tmp = scales["1"]
-    case tmp
-    when "5"
-      param.store("innocence", 5)
-      param.store("tension", 5)
-    when "4"
-      param.store("innocence", 3)
-      param.store("tension", 3)
-    else "2"
-    end
-    binding.pry
+    # tmp = scales["1"]
+    # case tmp
+    # when "5"
+    #   param.store("innocence", 5)
+    #   param.store("tension", 5)
+    # when "4"
+    #   param.store("innocence", 3)
+    #   param.store("tension", 3)
+    # else "2"
+    # end
+    # binding.pry
+    return params
   end
 end
