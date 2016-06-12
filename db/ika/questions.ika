@@ -2,7 +2,7 @@
   {
     "id":1,
     "name":"あなたは振り回されることが好きだと思う?",
-    "up_scales":"innocence, tension",
+    "up_scales":"innocence,tension",
     "down_scales":"",
     "created_at":"2016-06-12T00:15:00.000+09:00",
     "updated_at":"2016-06-12T00:15:00.000+09:00"
@@ -34,7 +34,7 @@
   {
     "id":5,
     "name":"あなたはたまに優しい人が好きですか?",
-    "up_scales":"hot, cold",
+    "up_scales":"hot,cold",
     "down_scales":"",
     "created_at":"2016-06-12T00:15:00.000+09:00",
     "updated_at":"2016-06-12T00:15:00.000+09:00"
@@ -42,7 +42,7 @@
   {
     "id":6,
     "name":"あなたはツンデレが好きですか?",
-    "up_scales":"hot, cold",
+    "up_scales":"hot,cold",
     "down_scales":"",
     "created_at":"2016-06-12T00:15:00.000+09:00",
     "updated_at":"2016-06-12T00:15:00.000+09:00"

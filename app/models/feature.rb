@@ -1,5 +1,6 @@
 class Feature < ActiveRecord::Base
   def self.calc_scales(scales)
+<<<<<<< HEAD
     binding.pry
      features = {}
       # features.push("該当するfeature") if ("属性に一致するパラメタが来てるか確認")
@@ -18,5 +19,12 @@ class Feature < ActiveRecord::Base
        features.push("energy") if ( scales ["innocence"] >= 7 && scales[ "happiness" ] >= 5 && scales[ "tension" ] == 10 )
 
        return features
+=======
+    # binding.pry
+    scales.each{|questionId, choice|
+      return choice
+    }
+    return scales
+>>>>>>> modify_user_calc_scales
   end
 end
