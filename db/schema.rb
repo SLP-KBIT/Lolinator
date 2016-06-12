@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160611063001) do
+ActiveRecord::Schema.define(version: 20160612053659) do
 
   create_table "characters", force: :cascade do |t|
     t.text     "name",       limit: 65535
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20160611063001) do
     t.text     "name",        limit: 65535
     t.text     "high_scales", limit: 65535
     t.text     "low_scales",  limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.text     "name",        limit: 65535
+    t.text     "up_scales",   limit: 65535
+    t.text     "down_scales", limit: 65535
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
