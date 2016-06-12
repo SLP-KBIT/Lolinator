@@ -11,6 +11,6 @@ class HomeController < ApplicationController
   def result
     # binding.pry
     question = params["question"]
-    @features = Feature.calc_scales(question)
+    @features = User.calc_scales(question)
   end
 end
