@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
-
-  get 'home/show'
+  post 'home/interview'
+  post 'home/result'
 
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
