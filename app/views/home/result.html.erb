@@ -4,10 +4,10 @@
 </div>
 <hr>
 <div id="result">
-    <%= @features %>
-    (hoge)さんの好みのロリの属性は<br>
-    中二<br>
-    メンヘラ<br>
+    あなたの好みのロリの属性は<br>
+    <% @features.each do |feature| %>
+      <%= feature %> <br>
+    <% end %>
     でした。<br><br>
 
     パラメーターは<br>
