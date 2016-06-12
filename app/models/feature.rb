@@ -1,5 +1,6 @@
 class Feature < ActiveRecord::Base
 
-  def calc_scales(scales)
+  def self.calc_scales(scales)
+    return scales
   end
 end
